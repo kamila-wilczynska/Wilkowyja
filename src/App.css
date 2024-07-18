@@ -91,7 +91,12 @@ h6 {
 /* Navbar */
 
 .logo {
-  height: 15rem;
+  height: 11rem;
+}
+@media screen and (min-width: 700px) {
+  .logo {
+    height: 15rem;
+  }
 }
 
 .navbar {
