@@ -681,8 +681,87 @@ h6 {
   .room-extras,
   .roomslist-center,
   .featured-rooms-center,
+  .footer-content,
   .filter-form {
     width: 95vw;
     max-width: 1300px;
+  }
+}
+
+.footer {
+  background: var(--offWhite);
+  color: var(--mainBlack);
+  padding: 2rem 2.5rem;
+  box-shadow: var(--lightShadow);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--mainBlack);
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: var(--primaryColor);
+}
+
+.footer-section.quote {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 1300px;
+  }
+
+  .footer-section {
+    margin: 0 1.5rem;
+    text-align: left;
+  }
+
+  .footer-section.quote {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer-section h3 {
+    font-size: 1.75rem;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 1.25rem;
   }
 }

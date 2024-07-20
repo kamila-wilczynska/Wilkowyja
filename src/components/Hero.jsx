@@ -86,7 +86,7 @@ const Hero = () => {
               <h1>Urokliwy domek w sercu natury</h1>
               <div></div>
               <p>
-                Odpocznij w naszych komfortowych domkach pośród malowniczych
+                Odpocznij w naszym komfortowym domku pośród malowniczych
                 krajobrazów.
               </p>
             </div>
