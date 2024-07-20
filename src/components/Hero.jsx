@@ -21,16 +21,34 @@ const Hero = () => {
     <div className="slider-container">
       <Slider {...settings}>
         <div className="slide">
-          <img src={image1} alt="Slide 1" />
-          <div className="slide-text">Tekst do slajdu 1</div>
+          <img src={image1} alt="Domek główne" />
+          <div className="slide-text">
+            <h2>Urokliwy Domek w Sercu Bieszczadów</h2>
+            <p>
+              Odpocznij w naszych komfortowych domkach pośród malowniczych
+              krajobrazów.
+            </p>
+          </div>
         </div>
         <div className="slide">
-          <img src={image2} alt="Slide 2" />
-          <div className="slide-text">Tekst do slajdu 2</div>
+          <img src={image2} alt="Hamak" />
+          <div className="slide-text">
+            <h2>Relaks na Świeżym Powietrzu</h2>
+            <p>
+              Odkryj spokój i relaks w zaciszu naszego ogrodu z wygodnym
+              hamakiem.
+            </p>
+          </div>
         </div>
         <div className="slide">
-          <img src={image3} alt="Slide 3" />
-          <div className="slide-text">Tekst do slajdu 3</div>
+          <img src={image3} alt="Kominek" />
+          <div className="slide-text">
+            <h2>Przytulne Wieczory przy Kominku</h2>
+            <p>
+              Spędź magiczne wieczory przy ciepłym kominku w rodzinnej
+              atmosferze.
+            </p>
+          </div>
         </div>
       </Slider>
     </div>
