@@ -91,11 +91,11 @@ h6 {
 /* Navbar */
 
 .logo {
-  height: 11rem;
+  height: 10rem;
 }
 @media screen and (min-width: 700px) {
   .logo {
-    height: 15rem;
+    height: 11rem;
   }
 }
 
@@ -107,6 +107,7 @@ h6 {
   padding: 0.1rem 2.5rem;
   background: var(--offWhite);
   z-index: 1;
+  box-shadow: var(--lightShadow);
 }
 .nav-header {
   display: flex;
@@ -152,6 +153,23 @@ h6 {
 .show-nav {
   height: 120px;
 }
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* odstęp między ikoną a tekstem */
+}
+
+.nav-btn .nav-icon {
+  font-size: 2.5em;
+}
+
+.nav-btn span {
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--primaryColor);
+}
+
 @media screen and (min-width: 768px) {
   .nav-btn {
     display: none;
@@ -169,6 +187,7 @@ h6 {
   .nav-links a {
     margin: 0 1rem;
     padding: 0.5rem 0;
+    font-size: 25px;
   }
 }
 /* end of navbar */
@@ -384,7 +403,15 @@ h6 {
   top: 50%;
   left: 50%;
   transform: scale(0);
-  transition: all 0.3s linear;
+  transition: all 0.1s linear;
+  padding: 50px;
+}
+
+@media screen and (min-width: 776px) {
+  .room-link {
+    transition: all 0.2s linear;
+    padding: 30px;
+  }
 }
 .img-container:hover {
   background: rgba(0, 0, 0, 0.8);
@@ -562,3 +589,17 @@ h6 {
   }
 }
 /* end of rooms fitler*/
+
+@media screen and (min-width: 992px) {
+  .nav-center,
+  .services-center,
+  .single-room-images,
+  .single-room-info,
+  .room-extras,
+  .roomslist-center,
+  .featured-rooms-center,
+  .filter-form {
+    width: 95vw;
+    max-width: 1300px;
+  }
+}

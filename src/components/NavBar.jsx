@@ -19,6 +19,7 @@ function NavBar() {
           </Link>
           <button type="button" className="nav-btn" onClick={handleToggle}>
             <FaAlignRight className="nav-icon" />
+            <span>Menu</span>
           </button>
         </div>
         <ul className={show ? "nav-links show-nav" : "nav-links"}>

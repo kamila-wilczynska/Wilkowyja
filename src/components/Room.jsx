@@ -30,7 +30,7 @@ export default function Room({ room }) {
           <p>za noc</p>
         </div>
         <Link to={`/rooms/${slug}`} className="btn-primary room-link">
-          Features
+          Więcej
         </Link>
       </div>
       <p className="room-info">{name}</p>
