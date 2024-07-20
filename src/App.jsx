@@ -5,12 +5,12 @@ import Error from "./pages/Error";
 import SingleRoom from "./pages/SingleRoom";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import Hero from "./components/Hero";
+// import Hero from "./components/Hero";
 function App() {
   return (
     <>
       <NavBar />
-      <Hero />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/attractions" element={<Attractions />} />

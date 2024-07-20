@@ -82,7 +82,7 @@ h6 {
 }
 .empty-search {
   text-align: center;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   margin: 2rem 0;
   padding: 1rem;
   letter-spacing: var(--mainSpacing);
@@ -226,7 +226,7 @@ h6 {
 .slide {
   position: relative;
   text-align: center;
-  height: 85vh; /* Wysokość slajdu */
+  height: 90vh; /* Wysokość slajdu */
 }
 
 .slide img {
@@ -242,7 +242,7 @@ h6 {
   transform: translateX(-50%);
   color: white;
   font-size: 1.5rem;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   padding: 10px;
 }
 
@@ -266,44 +266,97 @@ h6 {
 }
 /* End of Hero */
 /* Banner */
+/* Banner Styles */
+/* Slider Styles */
+.slider-container {
+  width: 100%;
+  background: var(--darkGrey);
+  margin: 0 auto;
+}
+
+.slide {
+  position: relative;
+  text-align: center;
+  height: 90vh;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  /* background: rgba(0, 0, 0, 0.5); */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  .slide-text {
+    width: 1300px;
+  }
+}
+
+/* Banner Styles */
 .banner {
   display: inline-block;
   background: rgba(0, 0, 0, 0.5);
   color: var(--mainWhite);
   padding: 2rem 1rem;
   text-align: center;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   letter-spacing: var(--mainSpacing);
 }
+
 .banner h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
+
 .banner div {
   width: 10rem;
   height: 5px;
   background: var(--primaryColor);
-  margin: 1.7rem auto;
+  margin: 1.5rem auto;
 }
+
 .banner p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
+
 @media screen and (min-width: 576px) {
   .banner {
     padding: 2rem 3rem;
   }
+
   .banner h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .banner p {
+    font-size: 1.5rem;
   }
 }
+
 @media screen and (min-width: 992px) {
   .banner {
     padding: 2rem 6rem;
   }
+
   .banner h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
+
 /* End of Banner */
 /* Title */
 .section-title {
@@ -313,7 +366,7 @@ h6 {
 .section-title h4 {
   font-size: 2rem;
   letter-spacing: var(--mainSpacing);
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   margin-bottom: 1rem;
 }
 .section-title div {
