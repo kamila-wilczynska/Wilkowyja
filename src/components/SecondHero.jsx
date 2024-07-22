@@ -1,7 +1,3 @@
-export default function SecondHero({ children, hero }) {
+export default function SecondHero({ children, hero = "defaultHero" }) {
   return <header className={hero}>{children}</header>;
 }
-
-SecondHero.defaultProps = {
-  hero: "defaultHero",
-};

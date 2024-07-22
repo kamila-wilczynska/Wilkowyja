@@ -1,5 +1,5 @@
 import room1 from "./images/details-1.jpeg"; //żółty
-import room2 from "./images/details-2.jpeg"; 
+import room2 from "./images/details-2.jpeg";
 import room3 from "./images/details-3.jpeg";
 import room4 from "./images/details-4.jpeg";
 import img1 from "./images/room-1.jpeg";
@@ -14,6 +14,8 @@ import img9 from "./images/room-9.jpeg";
 import img10 from "./images/room-10.jpeg";
 import img11 from "./images/room-11.jpeg";
 import img12 from "./images/room-12.jpeg"; //Zielony
+import img13F from "./images/room-13.jpeg"; //fiotet
+import img14F from "./images/room-14.jpeg"; //fiotet
 
 export default [
   {
@@ -421,25 +423,18 @@ export default [
     },
     fields: {
       name: "Fioletowy",
-      slug: "double-deluxe",
-      type: "double",
+      slug: "twin-room",
+      type: "podwójny",
       price: 400,
-      size: 500,
+      //   size: 500,
+      balcony: true,
       capacity: 2,
       pets: true,
       breakfast: true,
       featured: true,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
+        "Pokój dwuosobowy z dwoma pojedynczymi łóżkami. Wyposażony jest w przestronną szafę. Pokój posiada wyjście na balkon, na którym znajduje się stolik oraz dwa wygodne siedzenia, idealne do relaksu. Z balkonu rozciąga się malowniczy widok na wzgórza, co pozwala na pełne odprężenie i kontakt z naturą. Obok pokoju znajduje się łazienka z prysznicem",
+      extras: ["Pościel", "Ręczniki", "Internet"],
       images: [
         {
           fields: {
@@ -448,24 +443,11 @@ export default [
             },
           },
         },
+
         {
           fields: {
             file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
+              url: img14F,
             },
           },
         },
@@ -649,25 +631,18 @@ export default [
     },
     fields: {
       name: "Zielony",
-      slug: "family-deluxe",
-      type: "family",
+      slug: "triple-room",
+      type: "trzyosobowy",
       price: 500,
-      size: 700,
-      capacity: 6,
+      //   size: 700,
+      capacity: 3,
+      balcony: true,
       pets: true,
       breakfast: true,
       featured: true,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
+        "Pokój trzyosobowy z wyjściem na balkon, który zapewnia dodatkową przestrzeń do relaksu i podziwiania widoków. W pokoju znajduje się przestronna szafa na ubrania, drewniany stolik oraz dwa wygodne siedzenia, idealne do spędzania czasu w komfortowych warunkach. Na tym samym piętrze znajduje się dzielona łazienka z prysznicem, dostępna dla gości. Pokój zapewnia przytulne i funkcjonalne zakwaterowanie dla trzech osób.",
+      extras: ["Pościel", "Ręczniki", "Internet"],
       images: [
         {
           fields: {
@@ -679,21 +654,7 @@ export default [
         {
           fields: {
             file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
+              url: img13F,
             },
           },
         },
@@ -706,25 +667,18 @@ export default [
     },
     fields: {
       name: "Żółty",
-      slug: "presidential-room",
-      type: "presidential",
-      price: 600,
-      size: 1000,
-      capacity: 10,
+      slug: "quad-room",
+      type: "czteroosobowy",
+      price: 300,
+      //   size: 1000,
+      capacity: 4,
+      balcony: false,
       pets: true,
       breakfast: true,
       featured: true,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
+        "Pokój czteroosobowy, idealny dla rodzin lub grup przyjaciół. W środku znajduje się stolik dla trzech osób, idealny do spożywania posiłków czy pracy. Pokój wyposażony jest również w przestronną szafę, zapewniającą dużo miejsca na przechowywanie ubrań i innych rzeczy. Dzięki przestronności i funkcjonalnemu wyposażeniu, pokój ten gwarantuje wygodny i przyjemny pobyt dla czterech osób. Obok pokoju znajduje się dzielona łazienka z prysznicem.",
+      extras: ["Pościel", "Ręczniki", "Internet"],
       images: [
         {
           fields: {
@@ -737,20 +691,6 @@ export default [
           fields: {
             file: {
               url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
             },
           },
         },

@@ -1,4 +1,4 @@
-import React, { Component, createContext } from "react";
+import { Component, createContext } from "react";
 import items from "./data";
 
 const RoomContext = createContext();
@@ -11,10 +11,8 @@ class RoomProvider extends Component {
     loading: true,
   };
 
-  // get Data
   componentDidMount() {
     let rooms = this.formatData(items);
-    console.log(rooms);
     let featuredRooms = rooms.filter((room) => room.featured === true);
     this.setState({
       rooms,

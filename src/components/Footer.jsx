@@ -16,7 +16,7 @@ const Footer = () => {
             <MdEmail /> wilkowyja122@gmail.com
           </p>
           <p>
-            <FaMapMarkerAlt /> Adres: Ulica, Miasto, Kod pocztowy
+            <FaMapMarkerAlt /> Adres: Mchawa 122, 38-606 Baligród
           </p>
         </div>
         <div className="footer-section social">
