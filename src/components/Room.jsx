@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 export default function Room({ room }) {
-  const { name, slug, images, price } = room;
+  const { name, slug, images, price, priceTwo } = room;
   return (
     <article className="room">
       <div className="img-container">
@@ -10,6 +10,8 @@ export default function Room({ room }) {
         <div className="price-top">
           <h6>PLN{price}</h6>
           <p>za noc</p>
+          <h6>PLN{priceTwo}</h6>
+          <p>za dwie noce</p>
         </div>
         <Link to={`/rooms/${slug}`} className="btn-primary room-link">
           Więcej
@@ -26,5 +28,6 @@ Room.propTypes = {
     slug: PropTypes.string.isRequired,
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
     price: PropTypes.number.isRequired,
+    priceTwo: PropTypes.number.isRequired,
   }).isRequired,
 };

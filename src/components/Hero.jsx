@@ -1,9 +1,9 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import image1 from "../images/domek-glowne.jpg";
-import image2 from "../images/hamak.jpg";
-import image3 from "../images/kominek.jpg";
+import image1 from "/slider/domek-glowne.webp";
+import image2 from "/slider/hamak.webp";
+import image3 from "/slider/kominek.webp";
 
 const Hero = () => {
   const settings = {

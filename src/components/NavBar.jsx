@@ -1,4 +1,4 @@
-import logo from "../images/logo.png";
+import logo from "/logo.png";
 import { FaAlignRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";

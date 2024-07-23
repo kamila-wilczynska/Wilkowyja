@@ -4,8 +4,13 @@ import defaultBcg from "../images/details-4.jpeg";
 import { RoomContext } from "../Context";
 import Banner from "../components/Banner";
 import StyledHero from "../components/StyledHero";
+import { useEffect } from "react";
 
 const SingleRoom = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { slug } = useParams();
   const { getRoom } = useContext(RoomContext);
   const room = getRoom(slug);
@@ -27,6 +32,7 @@ const SingleRoom = () => {
     capacity,
     balcony,
     price,
+    priceTwo,
     extras,
 
     pets,
@@ -57,7 +63,8 @@ const SingleRoom = () => {
           </article>
           <article className="info">
             <h3>Informacje</h3>
-            <h6>cena : PLN{price}</h6>
+            <h6>cena za noc : PLN {price}</h6>
+            <h6>cena za dwie noce : PLN {priceTwo}</h6>
 
             <h6>
               max pojemność :{" "}

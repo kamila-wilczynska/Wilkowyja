@@ -494,9 +494,10 @@ h6 {
   color: var(--mainWhite);
   padding: 0.3rem 0.6rem 0.5rem;
   border-bottom-right-radius: 1rem;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   text-align: center;
   transition: var(--mainTransition);
+  padding-top: 10px;
 }
 .price-top h6 {
   margin-bottom: 0;
@@ -510,13 +511,17 @@ h6 {
   left: 50%;
   transform: scale(0);
   transition: all 0.1s linear;
-  padding: 50px;
+  padding: 30px;
 }
 
 @media screen and (min-width: 776px) {
   .room-link {
     transition: all 0.2s linear;
     padding: 30px;
+  }
+
+  .price-top p {
+    font-size: 0.8rem;
   }
 }
 .img-container:hover {
