@@ -94,7 +94,7 @@ function NavBar() {
             </Link>
           </li>
           <li className="mobile-only">
-            <a href="tel:+123456789" className="reserve-btn">
+            <a href="tel:+48887407451" className="reserve-btn">
               <FaPhone /> Zadzwoń
             </a>
           </li>
