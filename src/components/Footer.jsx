@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-section contact">
           <h3>Kontakt</h3>
           <p>
-            <FaPhoneAlt /> +48 123 456 789
+            <FaPhoneAlt /> +48 887 407 451
           </p>
           <p>
             <MdEmail /> wilkowyja122@gmail.com

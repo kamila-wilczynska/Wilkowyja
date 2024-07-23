@@ -12,7 +12,7 @@ import img7 from "./images/room-7.jpeg";
 import img8 from "/rooms/room-8.webp"; //fioletowy
 import img9 from "./images/room-9.jpeg";
 import img10 from "./images/room-10.jpeg";
-import img11 from "./images/room-11.jpeg";
+import img11 from "/slider/domek-glowne.webp";
 import img12 from "/rooms/room-12.webp"; //Zielony
 import img13F from "/rooms/IMG_4990.webp"; //zielony
 import img14F from "/rooms/IMG_5004.webp"; //fiotet
@@ -570,63 +570,7 @@ export default [
       ],
     },
   },
-  {
-    sys: {
-      id: "11",
-    },
-    fields: {
-      name: "family standard",
-      slug: "family-standard",
-      type: "family",
-      price: 400,
-      size: 600,
-      capacity: 5,
-      pets: true,
-      breakfast: false,
-      featured: false,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img11,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
-            },
-          },
-        },
-      ],
-    },
-  },
+
   {
     sys: {
       id: "12",
@@ -693,6 +637,63 @@ export default [
           fields: {
             file: {
               url: room2,
+            },
+          },
+        },
+      ],
+    },
+  },
+  {
+    sys: {
+      id: "11",
+    },
+    fields: {
+      name: "caly domek",
+      slug: "apartment",
+      type: "family",
+      price: 800,
+      priceTwo: 1250,
+      capacity: 9,
+      pets: true,
+      breakfast: false,
+      featured: true,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      extras: [
+        "Plush pillows and breathable bed linens",
+        "Soft, oversized bath towels",
+        "Full-sized, pH-balanced toiletries",
+        "Complimentary refreshments",
+        "Adequate safety/security",
+        "Internet",
+        "Comfortable beds",
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img11,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room2,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room3,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room4,
             },
           },
         },
