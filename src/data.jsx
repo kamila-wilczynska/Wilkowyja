@@ -16,6 +16,9 @@ import img11 from "/slider/domek-glowne.webp";
 import img12 from "/rooms/room-12.webp"; //Zielony
 import img13F from "/rooms/IMG_4990.webp"; //zielony
 import img14F from "/rooms/IMG_5004.webp"; //fiotet
+import wiata from "/gallery/wiata.webp";
+import lazienka from "/gallery/lazienka.webp";
+import kuchnia from "/gallery/kuchnia.webp";
 
 //{ img: "/gallery/domek1.webp" },
 
@@ -654,19 +657,18 @@ export default [
       price: 800,
       priceTwo: 1250,
       capacity: 9,
+      balcony: true,
       pets: true,
       breakfast: false,
       featured: true,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "przytulny domek składa się z trzech przestronnych pokoi, dwóch nowoczesnych łazienek z prysznicem oraz osobnej toalety. Komfort pobytu zwiększa dostęp do pralki i w pełni wyposażonej kuchni, w której znajdziecie wszystkie niezbędne sprzęty, aby przygotować domowe posiłki. Wieczory możecie spędzić przy kominku, ciesząc się ciepłem i atmosferą. Na zewnątrz czeka na Was wiata na grilla, idealna na letnie biesiady. Dzieci z pewnością ucieszą się z trampoliny, mini boiska do siatkówki, zjeżdżalni oraz placu zabaw z huśtawką. Dla tych, którzy pragną relaksu na świeżym powietrzu, przygotowaliśmy hamak i miejsce na ognisko, gdzie można piec kiełbaski pod gwiazdami.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "pralka",
+        "deska do prasowania",
+        "wyposażona kuchnia",
+        "pościel",
+        "internet",
       ],
       images: [
         {
@@ -679,21 +681,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2,
+              url: wiata,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room3,
+              url: lazienka,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room4,
+              url: kuchnia,
             },
           },
         },
