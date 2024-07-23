@@ -10,6 +10,10 @@ function NavBar() {
     setShow(!show);
   }
 
+  function handleLinkClick() {
+    setShow(false);
+  }
+
   return (
     <nav className="navbar">
       <div className="nav-center">
@@ -24,13 +28,19 @@ function NavBar() {
         </div>
         <ul className={show ? "nav-links show-nav" : "nav-links"}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={handleLinkClick}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/gallery">Galeria</Link>
+            <Link to="/gallery" onClick={handleLinkClick}>
+              Galeria
+            </Link>
           </li>
           <li>
-            <Link to="/attractions">Atrakcje</Link>
+            <Link to="/attractions" onClick={handleLinkClick}>
+              Atrakcje
+            </Link>
           </li>
         </ul>
       </div>

@@ -108,10 +108,10 @@ h6 {
 }
 /* end of globals */
 /* Navbar */
-
 .logo {
-  height: 10rem;
+  height: 7rem; /* Zmniejszona wysokość logo dla urządzeń mobilnych */
 }
+
 @media screen and (min-width: 700px) {
   .logo {
     height: 11rem;
@@ -128,24 +128,27 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.1rem 2.5rem;
+  padding: 0.5rem 1.5rem; /* Zmniejszony padding dla urządzeń mobilnych */
   background: var(--offWhite);
   z-index: 5;
   box-shadow: var(--lightShadow);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
+
 .nav-header {
   display: flex;
   justify-content: space-between;
-  height: 15%;
+  align-items: center; /* Wycentrowanie elementów w pionie */
 }
+
 .nav-btn {
   background: transparent;
   border: none;
   cursor: pointer;
   outline: none;
 }
+
 .nav-icon {
   font-size: 1.5rem;
   color: var(--primaryColor);
@@ -172,12 +175,13 @@ h6 {
   font-weight: 600;
   letter-spacing: var(--mainSpacing);
 }
+
 .nav-links a:hover {
   color: var(--primaryColor);
 }
 
 .show-nav {
-  height: 120px;
+  height: 200px;
 }
 
 .nav-btn {
@@ -216,7 +220,6 @@ h6 {
     font-size: 25px;
   }
 }
-/* end of navbar */
 
 .defaultHero,
 .roomsHero {

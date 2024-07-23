@@ -2,10 +2,10 @@
 import BlogPost from "../components/BlogPost/BlogPost";
 import image1 from "../images/jeziorko-bobrowe-i-wieza-widokowa.jpg";
 import image2 from "../images/Solina.jpeg";
-
 import { Link } from "react-router-dom";
 import SecondHero from "../components/SecondHero";
 import Banner from "../components/Banner";
+import { useEffect } from "react";
 
 const blogPosts = [
   {
@@ -25,7 +25,9 @@ const blogPosts = [
     isLeftAligned: false,
   },
 ];
-
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
 const Attractions = () => {
   return (
     <div>

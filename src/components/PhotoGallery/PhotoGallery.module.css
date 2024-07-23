@@ -7,7 +7,7 @@
   /* max-width: 620px; */
   margin: 0 auto;
   /* margin-top: 120px; */
-  padding: 10rem 0;
+  padding: 12rem 0 5rem;
 }
 
 .galleryWrap .single {
@@ -17,6 +17,12 @@
 
 .galleryWrap .single img {
   max-width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .galleryWrap .single img {
+    width: 100%;
+  }
 }
 
 .galleryWrap .single img:hover {

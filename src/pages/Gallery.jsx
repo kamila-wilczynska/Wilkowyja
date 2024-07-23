@@ -1,32 +1,39 @@
 import PhotoGallery from "../components/PhotoGallery/PhotoGallery";
-import image1 from "../images/gallery/domek1.jpg";
-import image2 from "../images/gallery/domek2.jpg";
-import image3 from "../images/gallery/domek3.jpg";
-import image4 from "../images/gallery/domek4.jpg";
-import image5 from "../images/gallery/domek5.jpg";
-import image6 from "../images/gallery/domekdladzieci.jpg";
-
+import { useEffect } from "react";
 function Gallery() {
   const galleryImages = [
-    {
-      img: image1,
-    },
-    {
-      img: image2,
-    },
-    {
-      img: image3,
-    },
-    {
-      img: image4,
-    },
-    {
-      img: image5,
-    },
-    {
-      img: image6,
-    },
+    { img: "/gallery/domek1.webp" },
+    { img: "/gallery/domek2.webp" },
+
+    { img: "/gallery/domek3.webp" },
+    { img: "/gallery/domek4.webp" },
+    { img: "/gallery/domek5.webp" },
+    { img: "/gallery/hamak2.webp" },
+    { img: "/gallery/wiata.webp" },
+    { img: "/gallery/wiata2-lower.webp" },
+    { img: "/gallery/domekdladzieci.webp" },
+
+    { img: "/gallery/kolo.webp" },
+    { img: "/gallery/drzewo.webp" },
+    { img: "/gallery/salon.webp" },
+    { img: "/gallery/dziad.webp" },
+    { img: "/gallery/kuchnia.webp" },
+    { img: "/gallery/balkon.webp" },
+
+    { img: "/gallery/lazienka.webp" },
+    { img: "/gallery/łazienka.webp" },
+    { img: "/gallery/lazienkamala.webp" },
+    { img: "/gallery/droga.webp" },
+    { img: "/gallery/laka.webp" },
+    { img: "/gallery/most.webp" },
+    { img: "/gallery/rzeka.webp" },
+
+    { img: "/gallery/noc.webp" },
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="WrapGallery">
