@@ -87,6 +87,25 @@ h6 {
   padding: 1rem;
   letter-spacing: var(--mainSpacing);
 }
+
+/* Dodajemy animacje */
+@keyframes slideDown {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 100vh;
+  }
+}
+
+.hidden {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.show {
+  animation: slideDown 0.3s ease forwards;
+}
 /* end of globals */
 /* Navbar */
 
@@ -706,7 +725,9 @@ h6 {
   .roomslist-center,
   .featured-rooms-center,
   .footer-content,
-  .filter-form {
+  .filter-form,
+  .blogContainer,
+  .galleryWrap {
     width: 95vw;
     max-width: 1300px;
   }
@@ -793,4 +814,26 @@ h6 {
 .leaflet-container {
   width: 50%;
   height: 400px;
+}
+
+/* Blog-container */
+
+@media screen and (min-width: 992px) {
+  .blogContainer {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.WrapGallery {
+  margin-top: 950px; /* Adjust this value for more space from the navbar */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1300px;
+  margin: 0 auto;
 }

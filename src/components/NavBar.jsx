@@ -27,6 +27,9 @@ function NavBar() {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/gallery">Galeria</Link>
+          </li>
+          <li>
             <Link to="/attractions">Atrakcje</Link>
           </li>
         </ul>

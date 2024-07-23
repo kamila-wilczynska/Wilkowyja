@@ -6,6 +6,7 @@ import SingleRoom from "./pages/SingleRoom";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import Gallery from "./pages/Gallery";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/attractions" element={<Attractions />} />
         <Route path="*" element={<Error />} />
         <Route path="/rooms/:slug" element={<SingleRoom />} />
