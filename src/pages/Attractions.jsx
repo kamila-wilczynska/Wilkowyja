@@ -25,10 +25,11 @@ const blogPosts = [
     isLeftAligned: false,
   },
 ];
-useEffect(() => {
-  window.scrollTo(0, 0);
-}, []);
+
 const Attractions = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <SecondHero hero="defaultHero">
