@@ -35,6 +35,13 @@ body {
   line-height: 1.4;
   font-size: 1.3rem;
 }
+
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
 h1 {
   font-size: 3em;
   line-height: 1;
