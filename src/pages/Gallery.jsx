@@ -1,5 +1,9 @@
 import PhotoGallery from "../components/PhotoGallery/PhotoGallery";
+import SecondHero from "../components/SecondHero";
+import Banner from "../components/Banner/Banner";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+
 function Gallery() {
   const galleryImages = [
     { img: "/gallery/domek1.webp" },
@@ -23,7 +27,7 @@ function Gallery() {
     { img: "/gallery/lazienka.webp" },
     { img: "/gallery/łazienka.webp" },
     { img: "/gallery/lazienkamala.webp" },
-    { img: "/gallery/droga.webp" },
+
     { img: "/gallery/laka.webp" },
     { img: "/gallery/most.webp" },
     { img: "/gallery/rzeka.webp" },
@@ -35,10 +39,22 @@ function Gallery() {
     window.scrollTo(0, 0);
   }, []);
 
+  const heroImage = "/slider/droga2.webp";
+
   return (
-    <div className="WrapGallery">
-      <PhotoGallery galleryImages={galleryImages} />
-    </div>
+    <>
+      <SecondHero backgroundImage={heroImage}>
+        <Banner title="Galeria">
+          <Link to="/" className="btn-primary">
+            Strona główna
+          </Link>
+        </Banner>
+      </SecondHero>
+
+      <div className="WrapGallery">
+        <PhotoGallery galleryImages={galleryImages} />
+      </div>
+    </>
   );
 }
 

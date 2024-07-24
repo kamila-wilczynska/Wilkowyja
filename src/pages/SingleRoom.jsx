@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 import defaultBcg from "../images/details-4.jpeg";
 import { RoomContext } from "../Context";
-import Banner from "../components/Banner";
+import Banner from "../components/Banner/Banner";
 import StyledHero from "../components/StyledHero";
 import { useEffect } from "react";
 
@@ -50,6 +50,7 @@ const SingleRoom = () => {
           </Link>
         </Banner>
       </StyledHero>
+
       <section className="single-room">
         <div className="single-room-images">
           {defaultImg.map((item, index) => {

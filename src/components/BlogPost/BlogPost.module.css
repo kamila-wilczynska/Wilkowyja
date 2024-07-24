@@ -6,7 +6,8 @@
 }
 
 .blogHeader {
-  background: #f7f7f7;
+  /* background: #f7f7f7; */
+  background-color: var(--darkGrey);
   padding: 1rem;
   cursor: pointer;
   display: flex;

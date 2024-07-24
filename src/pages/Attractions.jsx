@@ -1,4 +1,3 @@
-// src/pages/Attractions.jsx
 import BlogPost from "../components/BlogPost/BlogPost";
 import image1 from "../images/jeziorko-bobrowe-i-wieza-widokowa.jpg";
 import image2 from "../images/Solina.jpeg";
@@ -6,7 +5,7 @@ import image3 from "/blog/rabe.jpg";
 
 import { Link } from "react-router-dom";
 import SecondHero from "../components/SecondHero";
-import Banner from "../components/Banner";
+import Banner from "../components/Banner/Banner";
 import { useEffect } from "react";
 
 const blogPosts = [
@@ -40,13 +39,15 @@ const blogPosts = [
   },
 ];
 
+const heroImage = "/slider/defaultBcg.jpeg";
+
 const Attractions = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div>
-      <SecondHero hero="defaultHero">
+      <SecondHero backgroundImage={heroImage}>
         <Banner title="Atrakcje w okolicy">
           <Link to="/" className="btn-primary">
             Strona główna
