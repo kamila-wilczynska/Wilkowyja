@@ -1,5 +1,5 @@
 import Services from "../components/Services";
-import FeaturedRoom from "../components/FeaturedRoom";
+import FeaturedRoom from "../components/FeaturedRoom/FeaturedRoom";
 import Hero from "../components/Hero";
 import MapComponent from "../components/MapComponent/MapComponent";
 import { useEffect } from "react";

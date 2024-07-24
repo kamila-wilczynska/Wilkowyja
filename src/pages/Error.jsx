@@ -1,5 +1,5 @@
 import SecondHero from "../components/SecondHero";
-import Banner from "../components/Banner";
+import Banner from "../components/Banner/Banner";
 import { Link } from "react-router-dom";
 
 function Error() {
