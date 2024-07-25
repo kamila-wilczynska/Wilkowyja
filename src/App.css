@@ -72,7 +72,7 @@ h6 {
   margin-bottom: 1.5em;
 }
 
-.btn-primary {
+/* .btn-primary {
   display: inline-block;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
@@ -90,6 +90,35 @@ h6 {
 .btn-primary:hover {
   background: transparent;
   color: var(--primaryColor);
+} */
+
+.btn-primary {
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primaryColor);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  box-shadow: var(--lightShadow);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary:hover {
+  background: transparent;
+
+  color: var(--primaryColor);
+}
+
+.btn-fullwidth {
+  width: 90%;
+  margin-top: 1rem; /* Optional: Adds some space above the button */
 }
 
 @media screen and (min-width: 700px) {
@@ -140,9 +169,23 @@ h6 {
   height: 7rem; /* Zmniejszona wysokość logo dla urządzeń mobilnych */
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 2.5rem;
+  background: var(--offWhite);
+  z-index: 5;
+  box-shadow: var(--lightShadow);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
 @media screen and (min-width: 700px) {
   .logo {
-    height: 12rem;
+    height: 8rem;
+    padding-top: 10px;
+    padding-bottom: 5px;
   }
 
   .navbar {
@@ -150,20 +193,6 @@ h6 {
     border-bottom-right-radius: 0px;
   }
 }
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.5rem 1.5rem;
-  background: var(--offWhite);
-  z-index: 5;
-  box-shadow: var(--lightShadow);
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -249,132 +278,18 @@ h6 {
     /* font-size: 25px; */
     font-size: var(h5);
   }
-}
 
-/* NavBar.module.css */
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.1rem 2.5rem;
-  background: var(--offWhite);
-  z-index: 5;
-  box-shadow: var(--lightShadow);
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-
-.navCenter {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navHeader {
-  display: flex;
-  justify-content: space-between;
-  height: 15%;
-}
-
-.navBtn {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.navIcon {
-  font-size: 2.5em;
-  color: var(--primaryColor);
-}
-
-.navLinks {
-  height: 0;
-  overflow: hidden;
-  transition: var(--mainTransition);
-  list-style-type: none;
-  align-items: center;
-  text-align: right;
-  margin-left: auto;
-}
-
-.navLinks a {
-  display: block;
-  text-decoration: none;
-  padding: 1rem 0;
-  color: var(--mainBlack);
-  transition: var(--mainTransition);
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: var(--mainSpacing);
-}
-
-.navLinks a:hover {
-  color: var(--primaryColor);
-}
-
-.showNav {
-  height: 260px;
-}
-
-.reserveBtn {
-  background-color: var(--primaryColor);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-}
-
-.reserveBtn:hover {
-  background-color: darken(var(--primaryColor), 10%);
-}
-
-@media screen and (min-width: 768px) {
-  .navBtn {
-    display: none;
-  }
-
-  .navCenter {
-    max-width: 1170px;
-    margin: 0 auto;
+  .nav-header {
     display: flex;
+    justify-content: space-between;
+    align-items: center; /* Added to vertically align items */
+    height: 5em; /* Adjust height as needed */
   }
-
-  .navLinks {
-    height: auto;
+  .nav-header {
     display: flex;
-    margin-left: 4rem;
-  }
-
-  .navLinks a {
-    margin: 0 1rem;
-    padding: 0.5rem 0;
-    font-size: 1rem;
-  }
-
-  .reserveBtn {
-    padding: 0.5rem 1.5rem;
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-}
-
-.mobile-only {
-  display: none;
-}
-
-@media screen and (max-width: 992px) {
-  .mobile-only {
-    display: block;
+    justify-content: space-between;
+    align-items: center; /* Added to vertically align items */
+    height: 5em; /* Adjust height as needed */
   }
 }
 

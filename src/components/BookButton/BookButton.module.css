@@ -18,5 +18,6 @@
 
 .fixedButton:hover {
   background-color: darken(var(--primaryColor), 10%);
-  color: var(--mainBlack);
+  background: rgba(255, 255, 255, 0.5); /* White color with 80% opacity */
+  color: black;
 }

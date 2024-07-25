@@ -100,7 +100,7 @@ function ReservationForm() {
           onChange={handleChange}
         />
       </div>
-      <button type="submit" className="btn-primary">
+      <button type="submit" className={styles.fixedButton}>
         Wyślij
       </button>
     </form>
