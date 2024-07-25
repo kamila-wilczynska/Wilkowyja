@@ -553,65 +553,6 @@ h6 {
 }
 /*end of services */
 /* featured rooms */
-.featured-rooms {
-  padding: 5rem 0;
-}
-
-.featured-rooms-center {
-  width: 80vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas:
-    "room1 room2 room3"
-    ". room4 .";
-  gap: 2rem 40px;
-  justify-content: center;
-}
-
-.featured-rooms-center .room:nth-child(1) {
-  grid-area: room1;
-}
-
-.featured-rooms-center .room:nth-child(2) {
-  grid-area: room2;
-}
-
-.featured-rooms-center .room:nth-child(3) {
-  grid-area: room3;
-}
-
-.featured-rooms-center .room:nth-child(4) {
-  grid-area: room4;
-  justify-self: center; /* center horizontally */
-}
-
-@media screen and (max-width: 776px) {
-  .featured-rooms-center {
-    width: 80vw;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "room1"
-      "room2"
-      "room3"
-      "room4";
-  }
-}
-
-@media screen and (min-width: 776px) and (max-width: 992px) {
-  .featured-rooms-center {
-    width: 90vw;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .featured-rooms-center {
-    width: 95vw;
-    max-width: 1170px;
-  }
-}
 
 /* end pf featured rooms */
 /* room */
@@ -881,7 +822,8 @@ h6 {
   .footer-content,
   .filter-form,
   .blogContainer,
-  .galleryWrap {
+  .galleryWrap,
+  .paymentCenter {
     width: 85vw;
     max-width: 1070px;
   }

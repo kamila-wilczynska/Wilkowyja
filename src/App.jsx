@@ -7,6 +7,8 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Gallery from "./pages/Gallery/Gallery";
+import Reservation from "./pages/Reservation/Reservation";
+// import BookButton from "./components/BookButton/BookButton";
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
         <Route path="/attractions" element={<Attractions />} />
         <Route path="*" element={<Error />} />
         <Route path="/rooms/:slug" element={<SingleRoom />} />
+        <Route path="reservation" element={<Reservation />} />
       </Routes>
+      
       <Footer />
     </>
   );

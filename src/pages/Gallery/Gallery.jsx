@@ -4,6 +4,7 @@ import Banner from "../../components/Banner/Banner";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Gallery.module.css";
+import BookButton from "../../components/BookButton/BookButton";
 
 function Gallery() {
   const galleryImages = [
@@ -55,6 +56,7 @@ function Gallery() {
       <div className={styles.WrapGallery}>
         <PhotoGallery galleryImages={galleryImages} />
       </div>
+      <BookButton />
     </>
   );
 }

@@ -5,6 +5,7 @@ import { RoomContext } from "../Context";
 import Banner from "../components/Banner/Banner";
 import StyledHero from "../components/StyledHero";
 import { useEffect } from "react";
+import BookButton from "../components/BookButton/BookButton";
 
 const SingleRoom = () => {
   useEffect(() => {
@@ -87,6 +88,7 @@ const SingleRoom = () => {
           </ul>
         </section>
       </section>
+      <BookButton />
     </>
   );
 };

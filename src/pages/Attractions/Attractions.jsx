@@ -8,6 +8,7 @@ import SecondHero from "../../components/SecondHero";
 import Banner from "../../components/Banner/Banner";
 import { useEffect } from "react";
 import styles from "./Attractions.module.css";
+import BookButton from "../../components/BookButton/BookButton";
 
 const blogPosts = [
   {
@@ -70,6 +71,7 @@ const Attractions = () => {
           />
         ))}
       </div>
+      <BookButton />
     </div>
   );
 };

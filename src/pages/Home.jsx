@@ -3,6 +3,7 @@ import FeaturedRoom from "../components/FeaturedRoom/FeaturedRoom";
 import Hero from "../components/Hero";
 import MapComponent from "../components/MapComponent/MapComponent";
 import { useEffect } from "react";
+import BookButton from "../components/BookButton/BookButton";
 
 function Home() {
   useEffect(() => {
@@ -15,6 +16,7 @@ function Home() {
       <Services />
       <FeaturedRoom />
       <MapComponent />
+      <BookButton />
     </div>
   );
 }
