@@ -64,6 +64,7 @@ textarea {
   display: flex;
   text-align: center;
   justify-content: center;
+  border: none;
 }
 
 .fixedButton:hover {
