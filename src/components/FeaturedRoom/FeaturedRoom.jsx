@@ -3,7 +3,7 @@ import { RoomContext } from "../../Context";
 import Loading from "../Loading";
 import Room from "../Room/Room";
 import Title from "../Title";
-import styles from "./Featured.Room.module.css";
+import styles from "./FeaturedRoom.module.css";
 
 export default class FeaturedRoom extends Component {
   static contextType = RoomContext;

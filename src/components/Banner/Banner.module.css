@@ -8,6 +8,7 @@
   /* text-transform: capitalize; */
   letter-spacing: var(--mainSpacing);
   text-transform: uppercase;
+  font-family: var(--secondFont);
 }
 
 .banner h1 {
@@ -31,10 +32,6 @@
     padding: 2rem 3rem;
   }
 
-  .banner h1 {
-    font-size: 2.5rem;
-  }
-
   .banner p {
     font-size: 1.5rem;
   }
@@ -46,7 +43,7 @@
   }
 
   .banner h1 {
-    font-size: 3rem;
+    font-size: 2.3em;
   }
 }
 
