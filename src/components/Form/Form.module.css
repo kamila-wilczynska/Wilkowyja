@@ -69,4 +69,7 @@ button.btn-primary:hover {
   .reservationForm {
     padding: 1rem;
   }
+  .reservationForm {
+    margin: 1rem;
+  }
 }
