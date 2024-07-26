@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
 import styles from "./Form.module.css";
 
 function ReservationForm() {
@@ -18,9 +19,27 @@ function ReservationForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Logic to handle form submission
-    console.log(formData);
-    // Send email with reservation details
+
+    const templateParams = {
+      ...formData,
+      subject: `New message from ${formData.name}`,
+      reply_to: formData.email,
+    };
+
+    emailjs
+      .send(
+        "service_qjiyzqk",
+        "template_z8qvl4q",
+        templateParams,
+        "PItCfFi0p-DUFL0a2"
+      )
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Email Wysłany!");
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
   };
 
   return (
