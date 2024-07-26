@@ -28,6 +28,7 @@
   box-shadow: var(--lightShadow);
   text-align: left;
   width: 100%;
+  height: 100%;
 }
 
 .icon {
@@ -85,7 +86,7 @@
     z-index: 10;
     display: flex;
     align-items: center;
-	justify-content: center;
+    justify-content: center;
   }
 
   .reserveBtn:hover {

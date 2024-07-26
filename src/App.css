@@ -72,26 +72,6 @@ h6 {
   margin-bottom: 1.5em;
 }
 
-/* .btn-primary {
-  display: inline-block;
-  text-decoration: none;
-  letter-spacing: var(--mainSpacing);
-  color: var(--mainBlack);
-  background: var(--primaryColor);
-  padding: 0.5rem 1rem;
-  border: 3px solid var(--primaryColor);
-  transition: var(--mainTransition);
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 0.6rem 1rem;
-  border: none;
-  border-radius: 10px;
-}
-.btn-primary:hover {
-  background: transparent;
-  color: var(--primaryColor);
-} */
-
 .btn-primary {
   bottom: 20px;
   right: 20px;
@@ -197,6 +177,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 5em;
 }
 
 .nav-btn {
@@ -282,14 +263,14 @@ h6 {
   .nav-header {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Added to vertically align items */
-    height: 5em; /* Adjust height as needed */
+    align-items: center;
+    height: 5em;
   }
   .nav-header {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Added to vertically align items */
-    height: 5em; /* Adjust height as needed */
+    align-items: center;
+    height: 5em;
   }
 }
 
