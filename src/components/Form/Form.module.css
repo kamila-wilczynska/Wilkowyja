@@ -1,40 +1,54 @@
-.reservationForm {
+.formContainer {
+  max-width: 600px; /* Zmniejszono maksymalną szerokość */
+  margin: 1rem auto; /* Dodano marginesy u góry i na dole */
+  padding: 1rem; /* Zmniejszono padding */
   background: var(--offWhite);
-  padding: 2rem;
   border-radius: 10px;
   box-shadow: var(--lightShadow);
-  max-width: 600px;
-  margin: 0 auto;
-  margin-top: 1rem;
+}
+
+.statusMessage {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+  background-color: #d4edda;
+  color: #155724;
+  font-size: 0.9rem;
+}
+
+.statusMessage.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.reservationForm .formGroup {
   margin-bottom: 1rem;
 }
 
-.formGroup {
-  margin-bottom: 1.5rem;
-}
-
-.formGroup label {
+.reservationForm .formGroup label {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: var(--mainBlack);
+  font-size: 0.9rem;
 }
 
-.formGroup input,
-.formGroup textarea {
+.reservationForm .formGroup input,
+.reservationForm .formGroup textarea {
   width: 100%;
-  padding: 0.2rem;
+  padding: 0.4rem;
   border: 1px solid var(--mainGrey);
   border-radius: 5px;
   transition: var(--mainTransition);
   font-family: var(--secondFont);
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--mainBlack);
   background: var(--mainWhite);
 }
 
-.formGroup input:focus,
-.formGroup textarea:focus {
+.reservationForm .formGroup input:focus,
+.reservationForm .formGroup textarea:focus {
   border-color: var(--primaryColor);
   box-shadow: 0 0 5px var(--primaryColor);
   outline: none;
@@ -42,29 +56,25 @@
 
 textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 80px;
 }
 
 .fixedButton {
-  /* position: fixed; */
-  bottom: 20px;
-  right: 20px;
   background-color: var(--primaryColor);
   color: white;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1rem;
   border-radius: 50px;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-  box-shadow: var(--lightShadow);
-  z-index: 10;
+  justify-content: center;
   width: 100%;
   margin-top: 1rem;
-  display: flex;
-  text-align: center;
-  justify-content: center;
   border: none;
+  cursor: pointer;
+  font-family: var(--secondFont);
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  box-shadow: var(--lightShadow);
 }
 
 .fixedButton:hover {
@@ -74,11 +84,7 @@ textarea {
 }
 
 @media (max-width: 768px) {
-  .reservationForm {
-    padding: 1rem;
-  }
-
-  .reservationForm {
-    margin: 1rem;
+  .formContainer {
+    margin: 20px 10px;
   }
 }
