@@ -14,10 +14,10 @@
   background: var(--mainWhite);
 }
 
-.room:nth-child(4) {
+/* .room:nth-child(4) {
   flex: 1 1 100%;
-  max-width: 400px;
-}
+  max-width: 300px;
+} */
 
 .room:hover {
   box-shadow: var(--darkShadow);
@@ -71,7 +71,7 @@
 
 .roomLink:hover {
   color: black;
-  background: rgba(255, 255, 255, 0.5); /* White background with opacity 0.5 */
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .toggleIcon {
@@ -81,6 +81,12 @@
 @media screen and (min-width: 776px) {
   .roomLink {
     padding: 15px 25px;
+  }
+
+  .room:nth-child(4) {
+    flex: 0 0 calc(33.333% - 2rem);
+    align-self: center;
+    max-width: none;
   }
 }
 

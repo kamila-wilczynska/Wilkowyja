@@ -12,7 +12,7 @@ export default function Room({ room }) {
           <h6>PLN{price}</h6>
           <p>za noc</p>
           <h6>PLN{priceTwo}</h6>
-          <p>za dwie noce</p>
+          <p>za dodatkową noc</p>
         </div>
         <Link to={`/rooms/${slug}`} className={`${styles.roomLink}`}>
           Więcej

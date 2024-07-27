@@ -66,7 +66,7 @@ const SingleRoom = () => {
           <article className="info">
             <h3>Informacje</h3>
             <h6>cena za noc : PLN {price}</h6>
-            <h6>cena za dwie noce : PLN {priceTwo}</h6>
+            <h6>cena każdą dodatkową noc : PLN {priceTwo}</h6>
 
             <h6>
               max pojemność :{" "}
