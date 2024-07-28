@@ -40,7 +40,10 @@ const BlogPost = ({
         <div className={styles.textContent}>
           <p className={styles.category}>{category}</p>
           <p className={styles.description}>{distanse} km od Wilkowyji</p>
-          <p className={styles.description}>{description}</p>
+          <div
+            className={styles.description}
+            dangerouslySetInnerHTML={{ __html: description }}
+          ></div>
         </div>
       </div>
     </div>
